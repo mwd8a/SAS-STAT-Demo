@@ -35,7 +35,7 @@ run;
 
 /* Boxplot of FEV by SEX */
 proc sgplot data=fev_all;
-    hbox age / group=sex transparency=0.4;
+    hbox fev / group=sex transparency=0.4;
     where smoke='current smoker';
     title "Boxplot of FEV by SEX";
 run;
